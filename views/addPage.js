@@ -7,15 +7,15 @@ module.exports = () => layout(html`
   <form method="POST" action="/wiki/">
 
     <div class = "form-group">
-    <label for="title" class="col-sm-2 control-label">Author Name</label>
+    <label for="author" class="col-sm-2 control-label">Author Name</label>
     <div class="col-sm-10">
-        <input id="title" name="title" type="text" class="form-control"/>
+        <input id="author" name="author" type="text" class="form-control"/>
       </div>
     </div>
 
-    <div><label for="title" class="col-sm-2 control-label">Email</label>
+    <div><label for="email" class="col-sm-2 control-label">Email</label>
     <div class="col-sm-10">
-        <input id="title" name="title" type="text" class="form-control"/>
+        <input id="email" name="email" type="text" class="form-control"/>
       </div></div>
 
     <div class="form-group">
@@ -26,16 +26,16 @@ module.exports = () => layout(html`
     </div>
 
     <div>
-    <label for="title" class="col-sm-2 control-label">Content</label>
+    <label for="content" class="col-sm-2 control-label">Content</label>
     <div class="col-sm-10">
-        <input id="title" name="title" type="text" class="form-control"/>
+        <input id="content" name="content" type="text" class="form-control"/>
       </div>
       </div>
 
     <div>
-    <label for="title" class="col-sm-2 control-label">Status</label>
+    <label for="status" class="col-sm-2 control-label">Status</label>
     <div class="col-sm-10">
-        <input id="title" name="title" type="text" class="form-control"/>
+        <input id="status" name="status" type="text" class="form-control"/>
       </div>
       </div>
 

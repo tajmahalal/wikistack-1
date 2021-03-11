@@ -16,6 +16,7 @@ app.use(morgan("dev"));
 app.use(express.static(__dirname + "/stylesheets"));
 app.use(bodyParser.urlencoded({extended: false}))
 app.use('/wiki', wikiRouter);
+//app.use('/users', userRouter);
 
 
 app.get("/", (req, res) =>{
@@ -25,7 +26,7 @@ app.get("/", (req, res) =>{
 const init = async () => {
   // await Page.sync();
   // await User.sync();
-  await db.sync({force: true});
+  await db.sync({force: false});
 
   const PORT = 5432;
   app.listen(PORT, () => {
